@@ -11,9 +11,6 @@
 <p align="center">
   <img src="assets/uniaudio-tokenizer.png" alt="MingTok-Audio"/>
 </p>
-<p align="center">
-  <img src="assets/uniaudio-tokenizer-training.png" alt="MingTok-Audio-training"/>
-</p>
 
 ## Key Features
 - 🚀 **First Unified Continuous Speech Tokenizer:** the first continuous audio tokenizer to effectively integrate semantic and acoustic features, suitable for both understanding and generation tasks.
