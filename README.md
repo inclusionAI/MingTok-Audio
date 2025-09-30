@@ -2,21 +2,21 @@
     <img src="./assets/ant-bailing.png" width="100"/>
 <p>
 
-<p align="center">📑 <a href="https://github.com/inclusionAI/Ming-UniAudio/blob/main/assets/Ming_UniAudio.pdf">Technical Report</a>｜📖<a href="https://xqacmer.github.io/Ming-Unitok-Audio.github.io">Project Page</a> ｜🤗 <a href="https://huggingface.co/inclusionAI/Ming-UniAudio-Tokenizer">Hugging Face</a>｜ 🤖 <a href="https://modelscope.cn/models/inclusionAI/Ming-UniAudio-Tokenizer">ModelScope</a>
+<p align="center">📑 <a href="">Technical Report</a>｜📖<a href="https://xqacmer.github.io/Ming-Unitok-Audio.github.io">Project Page</a> ｜🤗 <a href="https://huggingface.co/inclusionAI/MingTok-Audio">Hugging Face</a>｜ 🤖 <a href="https://modelscope.cn/models/inclusionAI/MingTok-Audio">ModelScope</a>
 
 ## Architecture
-<!-- ![Ming-UniAudio-Tokenizer](assets/uniaudio-tokenizer.png)
-![Ming-UniAudio-Tokenizer-training](assets/uniaudio-tokenizer-training.png) -->
+<!-- ![MingTok-Audio](assets/uniaudio-tokenizer.png)
+![MingTok-Audio-training](assets/uniaudio-tokenizer-training.png) -->
 
 <p align="center">
-  <img src="assets/uniaudio-tokenizer.png" alt="Ming-UniAudio-Tokenizer"/>
+  <img src="assets/uniaudio-tokenizer.png" alt="MingTok-Audio"/>
 </p>
 <p align="center">
-  <img src="assets/uniaudio-tokenizer-training.png" alt="Ming-UniAudio-Tokenizer-training"/>
+  <img src="assets/uniaudio-tokenizer-training.png" alt="MingTok-Audio-training"/>
 </p>
 
 ## Key Features
-- 🚀 **Unified Representation:** A single semantic-acoustic unified representation for both understanding and generation tasks.
+- 🚀 **First Unified Continuous Speech Tokenizer:** the first continuous audio tokenizer to effectively integrate semantic and acoustic features, suitable for both understanding and generation tasks.
 - 🎧 **High-Fidelity Reconstruction:** Achieve high-fidelity audio generation by modeling continuous features with a VAE, minimizing information loss and preserving intricate acoustic textures.
 - 🌐 **Convolution-Free Efficiency:** Built on a pure causal transformer architecture, completely eliminating convolutional layers for superior efficiency and a simpler design.
 
@@ -34,7 +34,7 @@ import torchaudio
 
 from audio_tokenizer.modeling_audio_vae import AudioVAE
 
-model = AudioVAE.from_pretrained('inclusionAI/Ming-UniAudio-Tokenizer')
+model = AudioVAE.from_pretrained('inclusionAI/MingTok-Audio')
 model = model.cuda()
 model.eval()
 
@@ -141,7 +141,7 @@ torchaudio.save('./1089-134686-0000_reconstruct.wav', output_waveform.cpu()[0], 
       <td align="center">0.91</td>
     </tr>
     <tr>
-      <td align="left"><strong>Ming-UniAudio-Tokenizer(ours)</td>
+      <td align="left"><strong>MingTok-Audio(ours)</td>
       <td align="center">50</td>
       <td align="center"><b>4.21</b></td>
       <td align="center"><b>0.96</b></td>
@@ -206,7 +206,7 @@ torchaudio.save('./1089-134686-0000_reconstruct.wav', output_waveform.cpu()[0], 
       <td>31.73</td>
     </tr>
     <tr>
-      <td><strong>Ming-UniAudio(ours)</td>
+      <td><strong>Ming-UniAudio-16A3B(ours)</td>
       <td>2.84</td>
       <td>1.62</td>
       <td><strong>9.80</strong></td>
@@ -268,7 +268,7 @@ torchaudio.save('./1089-134686-0000_reconstruct.wav', output_waveform.cpu()[0], 
       <td align="center">0.51</td>
     </tr>
     <tr>
-      <td align="left"><strong>Ming-UniAudio(ours)</td>
+      <td align="left"><strong>Ming-UniAudio-16A3B(ours)</td>
       <td align="center"><b>0.95</b></td>
       <td align="center">0.70</td>
       <td align="center">1.85</td>

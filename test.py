@@ -3,7 +3,7 @@ import torchaudio
 
 from audio_tokenizer.modeling_audio_vae import AudioVAE
 
-model = AudioVAE.from_pretrained('inclusionAI/Ming-UniAudio-Tokenizer')
+model = AudioVAE.from_pretrained('inclusionAI/MingTok-Audio')
 model = model.cuda()
 model.eval()
 
