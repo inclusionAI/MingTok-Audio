@@ -2,7 +2,7 @@
     <img src="./assets/ant-bailing.png" width="100"/>
 <p>
 
-<p align="center">📑 <a href="">Technical Report</a>｜📖<a href="https://xqacmer.github.io/Ming-Unitok-Audio.github.io">Project Page</a> ｜🤗 <a href="https://huggingface.co/inclusionAI/MingTok-Audio">Hugging Face</a>｜ 🤖 <a href="https://modelscope.cn/models/inclusionAI/MingTok-Audio">ModelScope</a>
+<p align="center">📖<a href="https://xqacmer.github.io/Ming-Unitok-Audio.github.io">Project Page</a> ｜🤗 <a href="https://huggingface.co/inclusionAI/MingTok-Audio">Hugging Face</a>｜ 🤖 <a href="https://modelscope.cn/models/inclusionAI/MingTok-Audio">ModelScope</a>
 
 ## Architecture
 <!-- ![MingTok-Audio](assets/uniaudio-tokenizer.png)
