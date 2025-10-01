@@ -203,7 +203,7 @@ torchaudio.save('./1089-134686-0000_reconstruct.wav', output_waveform.cpu()[0], 
       <td>31.73</td>
     </tr>
     <tr>
-      <td><strong>Ming-UniAudio-16A3B(ours)</td>
+      <td><strong>Ming-UniAudio-16B-A3B(ours)</td>
       <td>2.84</td>
       <td>1.62</td>
       <td><strong>9.80</strong></td>
@@ -265,7 +265,7 @@ torchaudio.save('./1089-134686-0000_reconstruct.wav', output_waveform.cpu()[0], 
       <td align="center">0.51</td>
     </tr>
     <tr>
-      <td align="left"><strong>Ming-UniAudio-16A3B(ours)</td>
+      <td align="left"><strong>Ming-UniAudio-16B-A3B(ours)</td>
       <td align="center"><b>0.95</b></td>
       <td align="center">0.70</td>
       <td align="center">1.85</td>
