@@ -14,7 +14,7 @@
 
 ## Key Features
 - 🚀 **First Unified Continuous Speech Tokenizer:** the first continuous audio tokenizer to effectively integrate semantic and acoustic features, suitable for both understanding and generation tasks.
-- 🎧 **High-Fidelity Reconstruction:** Achieve high-fidelity audio generation by modeling continuous features with a VAE, minimizing information loss and preserving intricate acoustic textures.
+- 🎧 **High-Quality Reconstruction:** Achieve high-quality audio generation by modeling continuous features with a VAE, minimizing information loss and preserving intricate acoustic textures.
 - 🌐 **Convolution-Free Efficiency:** Built on a pure causal transformer architecture, completely eliminating convolutional layers for superior efficiency and a simpler design.
 
 
