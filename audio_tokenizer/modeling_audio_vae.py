@@ -18,6 +18,7 @@ class AudioVAE(PreTrainedModel):
             input_dim=config.enc_kwargs['input_dim'],
             hop_size=config.enc_kwargs.get('hop_size', 320),
             latent_dim=config.enc_kwargs['latent_dim'],
+            patch_size=config.patch_size
         )
 
         if config.semantic_module_kwargs is not None:
@@ -33,6 +34,7 @@ class AudioVAE(PreTrainedModel):
             output_dim=config.dec_kwargs['output_dim'],
             latent_dim=config.dec_kwargs['latent_dim'],
             semantic_model=semantic_model,
+            patch_size=config.patch_size
         )
 
         self.post_init()
@@ -66,6 +68,8 @@ class AudioVAE(PreTrainedModel):
                 - frame_num (torch.Tensor): The number of frames for each audio, shape (B,).
         """
         frame_num = torch.ceil(waveform_length/self.config.enc_kwargs['input_dim']).to(torch.int32)
+        if self.config.patch_size != -1:
+            frame_num = torch.ceil(frame_num/self.config.patch_size)
         h, y = self.encoder(waveform)
         h = h.transpose(1, 2)  # [B, d, T]
 
