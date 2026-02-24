@@ -4,6 +4,7 @@ from transformers import PretrainedConfig
 class AudioVAEconfig(PretrainedConfig):
     def __init__(
         self,
+        sample_rate: int=16000,
         enc_kwargs: dict = None,
         semantic_module_kwargs: dict = None,
         dec_kwargs: dict = None,
@@ -18,6 +19,7 @@ class AudioVAEconfig(PretrainedConfig):
         patch_size=-1,
         **kwargs
     ):
+        self.sample_rate = sample_rate
         self.enc_kwargs = enc_kwargs
         self.semantic_module_kwargs = semantic_module_kwargs
         self.dec_kwargs = dec_kwargs
